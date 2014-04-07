@@ -13,9 +13,11 @@
   (resource-response bootstrap-css))
 
 (defn css-theme-handler
+  [request]
   (resource-response bootstrap-css-theme))
 
 (defn js-handler
+  [request]
   (resource-response bootstrap-js))
 
 (defn add-bootstrap
