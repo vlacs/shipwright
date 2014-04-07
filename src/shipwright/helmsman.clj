@@ -25,11 +25,11 @@
   (into helmsman-definition
         [:context "bootstrap"
          ^{:id :bootstrap/css}
-         [:get "css"]
+         [:get "css" css-handler]
          ^{:id :bootstrap/css-theme}
-         [:get "css-theme"]
+         [:get "css-theme" css-theme-handler]
          ^{:id :bootstrap/js}
-         [:get "js"]
+         [:get "js" js-handler]
          [wrap-file-info]
          [wrap-content-type]
          [wrap-head]]))
