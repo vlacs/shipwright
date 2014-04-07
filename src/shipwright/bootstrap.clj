@@ -1,4 +1,4 @@
-(ns shipwright.helmsman
+(ns shipwright.bootstrap
   (:require [ring.util.response :refer [resource-response]]
             [ring.middleware.content-type :refer [wrap-content-type]]
             [ring.middleware.file-info :refer [wrap-file-info]]
